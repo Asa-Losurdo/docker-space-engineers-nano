@@ -1,4 +1,4 @@
-# windows server nano + space engineers
+# windows server ~~nano~~ + space engineers
 this image is a base image without a world, you'll need to derive your own image from this one.
 
 https://docs.docker.com/get-docker/
