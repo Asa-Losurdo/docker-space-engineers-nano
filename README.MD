@@ -1,15 +1,19 @@
 # windows server ~~nano~~ + space engineers
 this image is a base image without a world, you'll need to derive your own image from this one.
 
+**note, this is a larger image as it has se already installed. starts faster but the size is ~11Gb**
+
 https://docs.docker.com/get-docker/
 
 https://www.spaceengineersgame.com/dedicated-servers/
 
 https://hub.docker.com/r/asalosurdo/space-engineers-dedicated
 
+https://github.com/Asa-Losurdo/space-engineers-dedicated
+
 #### Example dockerfile
 ```dockerfile
-    FROM  docker-space-engineers-nano
+    FROM   asalosurdo/space-engineers-dedicated
     COPY ./world/ /data
     EXPOSE 27016/udp 1973
 ```
